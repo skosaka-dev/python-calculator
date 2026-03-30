@@ -9,6 +9,8 @@ def calculate(a, op, b):
         if b == 0:
             raise ValueError("0で割ることはできません")
         return a / b
+    elif op == '%':
+      return a % b
     else:
         raise ValueError(f"無効な演算子: {op}")
 
